@@ -1,0 +1,60 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Products" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="8px" top="0px">
+                        <layout:control>
+                            <IconTabBar expandable="false" expanded="true" applyContentPadding="false" backgroundDesign="Solid" upperCase="false" visible="true" selectedKey="Ok">
+                                <items>
+                                    <IconTabFilter icon="sap-icon://product" iconColor="Positive" text="Products" count="" design="Vertical" showAll="false" textDirection="Inherit" enabled="true" visible="true" iconDensityAware="false">
+                                        <content/>
+                                    </IconTabFilter>
+                                    <IconTabSeparator icon="" iconDensityAware="false"/>
+                                    <IconTabSeparator icon="" iconDensityAware="false"/>
+                                </items>
+                                <content/>
+                            </IconTabBar>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="0px" top="146.01171875px">
+                        <layout:control>
+                            <List mode="SingleSelectMaster" width="100%" headerText="ITEMS" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" itemPress="_onStandardListItemPress">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar/>
+                                <items>
+                                    <StandardListItem icon="sap-icon://notes" title="MILK" description="" info="" infoState="None" type="Active" selected="false" visible="true" press="_onStandardListItemPress1"/>
+                                    <StandardListItem icon="sap-icon://notes" title="MEAT ITEMS" description="" info="" infoState="Success" type="Active" selected="false" visible="true"/>
+                                    <StandardListItem icon="sap-icon://notes" title="VEGETABLE ITEMS" description="" info="" infoState="Error" type="Active" selected="false" visible="true"/>
+                                </items>
+                            </List>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="179px" top="23px">
+                        <layout:control>
+                            <Button text="" type="Default" icon="sap-icon://log" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

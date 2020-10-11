@@ -1,0 +1,37 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Feedback" xmlns="sap.m" xmlns:richtexteditor="sap.ui.richtexteditor" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="15px">
+                        <layout:control>
+                            <richtexteditor:RichTextEditor id="sap_m_Page_0-content-sap_ui_richtexteditor_RichTextEditor-1602368505784" width="100%" height="300px" value="" showGroupFontStyle="true" showGroupTextAlign="true" showGroupFont="true" showGroupStructure="true" showGroupLink="true" showGroupInsert="true" showGroupClipboard="true" required="false" editable="true" visible="true" class="sapUiCompSmartMultiEditSmartField" editorType="TinyMCE4" customToolbar="true"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="212px" top="370px">
+                        <layout:control>
+                            <ToggleButton pressed="true" text="FEED BACK" iconFirst="true" width="auto" enabled="true" visible="true" press="_onToggleButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="19px" top="387px">
+                        <layout:control>
+                            <Button text="BACK" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

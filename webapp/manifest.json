@@ -1,0 +1,241 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"_version": "1.3.0",
+		"id": "com.sap.build.standard.untitledPrototype",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.2.2"
+		},
+		"dataSources": {
+			"local": {
+				"uri": "/here/goes/your/serviceUrl/local/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/metadata.xml"
+				}
+			}
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"ach": "ach",
+		"resources": "resources.json",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.32.0"
+		}
+	},
+	"sap.ui": {
+		"_version": "1.3.0",
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"_version": "1.3.0",
+		"rootView": {
+			"viewName": "generated.app.view.StoresNearMe",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.50.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"uri": "i18n/i18n.properties"
+			},
+			"": {
+				"dataSource": "local",
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"loadMetadataAsync": false,
+					"json": true,
+					"bJSON": true,
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Inline",
+					"useBatch": true,
+					"refreshAfterChange": false,
+					"disableHeadRequestForToken": true
+				}
+			}
+		},
+		"resources": {
+			"css": []
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "com.sap.build.standard.untitledPrototype.view",
+				"controlId": "App",
+				"clearTarget": false,
+				"controlAggregation": "pages",
+				"bypassed": {
+					"target": [
+						"Login"
+					]
+				}
+			},
+			"targets": {
+				"Login": {
+					"controlAggregation": "pages",
+					"viewName": "Login",
+					"viewId": "Login",
+					"viewLevel": 3,
+					"transition": "slide"
+				},
+				"Signup": {
+					"controlAggregation": "pages",
+					"viewName": "Signup",
+					"viewId": "Signup",
+					"viewLevel": 4,
+					"transition": "slide"
+				},
+				"Category": {
+					"controlAggregation": "pages",
+					"viewName": "Category",
+					"viewId": "Category",
+					"viewLevel": 1,
+					"transition": "slide"
+				},
+				"Payment": {
+					"controlAggregation": "pages",
+					"viewName": "Payment",
+					"viewId": "Payment",
+					"viewLevel": 7,
+					"transition": "slide"
+				},
+				"RateUs": {
+					"controlAggregation": "pages",
+					"viewName": "RateUs",
+					"viewId": "RateUs",
+					"viewLevel": 9,
+					"transition": "slide"
+				},
+				"Feedback": {
+					"controlAggregation": "pages",
+					"viewName": "Feedback",
+					"viewId": "Feedback",
+					"viewLevel": 5,
+					"transition": "slide"
+				},
+				"Products": {
+					"controlAggregation": "pages",
+					"viewName": "Products",
+					"viewId": "Products",
+					"viewLevel": 6,
+					"transition": "slide"
+				},
+				"OrderConfirmation": {
+					"controlAggregation": "pages",
+					"viewName": "OrderConfirmation",
+					"viewId": "OrderConfirmation",
+					"viewLevel": 8,
+					"transition": "slide"
+				},
+				"StoresNearMe": {
+					"controlAggregation": "pages",
+					"viewName": "StoresNearMe",
+					"viewId": "StoresNearMe",
+					"viewLevel": 2,
+					"transition": "slide"
+				}
+			},
+			"routes": [
+				{
+					"pattern": "Login/:context:",
+					"name": "Login",
+					"target": [
+						"Login"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"Login"
+					]
+				},
+				{
+					"pattern": "Signup/:context:",
+					"name": "Signup",
+					"target": [
+						"Signup"
+					]
+				},
+				{
+					"pattern": "Category/:context:",
+					"name": "Category",
+					"target": [
+						"Category"
+					]
+				},
+				{
+					"pattern": "Payment/:context:",
+					"name": "Payment",
+					"target": [
+						"Payment"
+					]
+				},
+				{
+					"pattern": "RateUs/:context:",
+					"name": "RateUs",
+					"target": [
+						"RateUs"
+					]
+				},
+				{
+					"pattern": "Feedback/:context:",
+					"name": "Feedback",
+					"target": [
+						"Feedback"
+					]
+				},
+				{
+					"pattern": "Products/:context:",
+					"name": "Products",
+					"target": [
+						"Products"
+					]
+				},
+				{
+					"pattern": "OrderConfirmation/:context:",
+					"name": "OrderConfirmation",
+					"target": [
+						"OrderConfirmation"
+					]
+				},
+				{
+					"pattern": "StoresNearMe/:context:",
+					"name": "StoresNearMe",
+					"target": [
+						"StoresNearMe"
+					]
+				}
+			]
+		}
+	}
+}

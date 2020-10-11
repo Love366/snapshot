@@ -1,0 +1,31 @@
+{
+    "dataBinding": {
+        "/webapp/view/Login.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Signup.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Category.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Payment.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/RateUs.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Feedback.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/Products.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/OrderConfirmation.view.xml": {
+            "entitySet": ""
+        }, 
+        "/webapp/view/StoresNearMe.view.xml": {
+            "entitySet": ""
+        } 
+    }
+}

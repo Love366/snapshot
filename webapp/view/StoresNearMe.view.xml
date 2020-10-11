@@ -1,0 +1,52 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.StoresNearMe" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <List mode="SingleSelectMaster" width="100%" headerText="STORES NEAR ME" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" itemPress="_onObjectListItemPress">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar/>
+                                <items>
+                                    <ObjectListItem intro="" title="UDAYA SUPER MARKET" number="" numberUnit="" numberState="None" type="Active" selected="true" showMarkers="false">
+                                        <attributes>
+                                            <ObjectAttribute text="78 Station St, Wentworthville NSW 2145" active="false" visible="true"/>
+                                        </attributes>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                    <ObjectListItem intro="" title="PATEL BROTHERS" number="" numberUnit="" numberState="None" type="Active" selected="false" showMarkers="false">
+                                        <attributes>
+                                            <ObjectAttribute text="85/87 Marion St, Harris Park NSW 2150" active="false" visible="true"/>
+                                        </attributes>
+                                        <firstStatus/>
+                                        <secondStatus/>
+                                    </ObjectListItem>
+                                </items>
+                            </List>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>

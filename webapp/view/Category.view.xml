@@ -1,0 +1,75 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.standard.untitledPrototype.controller.Category" xmlns="sap.m" xmlns:layout="sap.ui.commons.layout">
+    <Page showHeader="false" title="Page Title" showFooter="false" showNavButton="false" enableScrolling="false">
+        <content>
+            <layout:AbsoluteLayout horizontalScrolling="Hidden" verticalScrolling="Auto">
+                <layout:positions>
+                    <layout:PositionContainer left="0px" top="0px">
+                        <layout:control>
+                            <List mode="SingleSelectMaster" width="100%" headerText="CATEGORIES" footerText="" backgroundDesign="Solid" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true" visible="true" itemPress="_onStandardListItemPress">
+                                <infoToolbar>
+                                    <Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+                                        <content>
+                                            <Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+                                        </content>
+                                    </Toolbar>
+                                </infoToolbar>
+                                <headerToolbar/>
+                                <items>
+                                    <StandardListItem icon="sap-icon://notes" title="GROCERY" description="" info="" infoState="None" type="Active" selected="false" visible="true" press="_onStandardListItemPress1"/>
+                                </items>
+                            </List>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="6px" top="471.01171875px">
+                        <layout:control>
+                            <Button text="BACK" type="Default" icon="sap-icon://nav-back" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false" press="_onButtonPress"/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="2px" top="244.01171875px">
+                        <layout:control>
+                            <GenericTile header="PRODUCTS" subheader="" frameType="Auto" press="_onGenericTilePress">
+                                <tileContent>
+                                    <TileContent footer="" unit="" class="sapUiTinyMarginBottom sapUiTinyMarginEnd">
+                                        <content>
+                                            <NumericContent value="PRODUCTS" valueColor="Neutral" indicator="None" icon="sap-icon://product"/>
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="161px" top="241.01171875px">
+                        <layout:control>
+                            <GenericTile header="OFFERS" subheader="" frameType="Auto">
+                                <tileContent>
+                                    <TileContent footer="" unit="">
+                                        <content>
+                                            <NumericContent value="OFFERS" valueColor="Neutral" indicator="None" icon="sap-icon://activate"/>
+                                        </content>
+                                    </TileContent>
+                                </tileContent>
+                            </GenericTile>
+                        </layout:control>
+                    </layout:PositionContainer>
+                    <layout:PositionContainer left="41px" top="396.01171875px">
+                        <layout:control>
+                            <ToolbarSpacer width=""/>
+                        </layout:control>
+                    </layout:PositionContainer>
+                </layout:positions>
+            </layout:AbsoluteLayout>
+        </content>
+        <footer>
+            <OverflowToolbar width="100%" height="46px" design="Auto" enabled="true" visible="true">
+                <content>
+                    <ToolbarSpacer width=""/>
+                    <Button text="Save" type="Emphasized" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                    <Button text="Cancel" type="Default" iconFirst="true" width="auto" enabled="true" visible="true" iconDensityAware="false"/>
+                </content>
+            </OverflowToolbar>
+        </footer>
+        <headerContent/>
+        <subHeader/>
+        <customHeader/>
+    </Page>
+</mvc:View>
